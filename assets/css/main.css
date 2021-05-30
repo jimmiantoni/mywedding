@@ -1,0 +1,667 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    /* background: #eee; */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg {
+    background-image: url("../img/bg.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-open {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-tex.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.bg-open h1 {
+    /* margin: auto; */
+    font-family: 'Cookie', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 80px;
+    color: #31524C;
+    text-align: center;
+    padding-top: 6%;
+}
+
+.icon-center {
+    /* position: relative; */
+}
+
+.icon-center .line { 
+    position: absolute;
+    top: 48%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.line .line-green {
+    background-color: #608161;
+    padding: 2%;  
+}
+
+.icon-center .icon {
+    position: absolute;
+    top: 40.5%;
+    left: 43.5%;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.icon-center .icon img {
+    background-color: white;
+    padding: 10px;
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+}
+
+.list { 
+    width: 40%;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.list a {
+    font-family: 'Crimson Text', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: black;
+    text-decoration-line: none;
+    padding: 5%;
+}
+
+.list img {
+    width: 10%;
+}
+
+.get-center {
+    flex-direction: column;
+    z-index: 2;
+}
+
+.get-center h3 {
+    font-family: 'Crimson Text', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 50px; 
+    align-items: center;
+    text-align: center; 
+    color: #2A2A2D;
+}
+
+.get-center h2 {
+    font-family: 'Cookie', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 10px; 
+    text-align: center; 
+    color: #31524C;
+}
+
+.get-center .dan {
+    font-size: 40px;
+    line-height: 0px;
+}
+
+.get-center p {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    color: #2A2A2D; 
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.scroll-down {
+    font-style: normal !important;
+}
+
+.leaveup {
+    width: auto !important;
+    height: auto !important;
+}
+
+.leavedown {
+    width: auto !important;
+    height: auto !important;
+}
+
+.trigger {
+    position: absolute;
+    bottom: 0;
+    width: auto !important;
+    height: auto !important;
+}
+
+.opening {
+    flex-direction: column;
+}
+
+.opening p{
+    font-family: 'Crimson Text', serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.bismillah {
+    width: auto !important;
+    height: auto !important;
+}
+
+.event {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.event h2 {
+
+}
+
+.row-one {
+    padding-top: 6%;
+}
+
+.row-two {
+    background: rgba(49, 82, 76, 0.9);
+    mix-blend-mode: normal;
+}
+
+.event p {
+    font-family: 'Crimson Text', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center; 
+    color: #FFFFFF;
+}
+
+.row-one h2 {
+    font-family: 'Damion', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 20px; 
+    text-align: center; 
+    color: #4B4B4B; 
+    margin-bottom: 20px;
+}
+
+.row-two h2 {
+    font-family: 'Damion', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px; 
+    text-align: center; 
+    color: #FFFFFF; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.date-now { 
+    font-weight: bold !important; 
+    color: #4B4B4B !important; 
+}
+
+.openmaps {
+    width: 50px !important;
+    height: 50px !important;
+    margin: auto;
+    
+}   
+
+.time-view {
+    display: inline-flex;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.akad {
+    display: grid;
+    text-align: right;
+    width: 35%;
+}
+
+.akad span {
+    font-family: 'Crimson Text', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;  
+    color: #31524C; 
+}
+
+.resepsi span {
+    font-family: 'Crimson Text', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;  
+    color: #31524C; 
+}
+
+.resepsi {
+    display: grid;
+    text-align: left;
+    width: 36%;
+}
+
+.rings {
+    width: auto !important;
+    height: auto !important;
+    margin: auto;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.under-first { 
+    width: 4%;
+    height: 2px;
+    margin: auto; 
+    background: #C08329;
+}
+
+.under-two {
+    width: 15%;
+    height: 1px;
+    margin: auto; 
+    background: #31524C;
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+
+.under-three {
+    width: 7%;
+    height: 2px;
+    margin: auto; 
+    background: #C08329;
+}
+
+.klik {
+    padding-bottom: 25px;
+}
+
+.closing {
+    flex-direction: column;
+}
+
+.closing p {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;  
+    color: #000000; 
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.closing h2 {
+    font-family: 'Cookie', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 71px;
+    color: #31524C;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.closing h4 {
+    font-family: 'Cookie', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 20px;
+    color: #31524C;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.icon-jt {
+    width: auto !important;
+    height: auto !important; 
+} 
+
+.icon-first {
+    display: none !important;
+}
+
+.map-google {
+    border: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 450px; 
+    height: 200px;
+}
+
+/* @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) {   */
+@media screen and (max-width: 768px) {
+    .bg {
+        background-image: url("../img/bgm.png"); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bg-open h1 {
+        /* margin: auto; */
+        font-family: 'Cookie', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 55px;
+        line-height: 80px;
+        color: #31524C;
+        text-align: center;
+        padding-top: 30%;
+    }
+
+    .icon-center .icon {
+        position: absolute;
+        top: 42%;
+        left: 35%;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    
+    .icon-center .icon img {
+        background-color: white;
+        padding: 10px;
+        width: 35%;
+        border-radius: 50%;
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .line .line-green {
+        background-color: #608161;
+        padding: 4%;  
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .get-center h3 {
+        font-family: 'Crimson Text', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px; 
+        align-items: center;
+        text-align: center; 
+        color: #2A2A2D;
+    }
+
+    .leaveup {
+        width: 50% !important; 
+    }
+    
+    .leavedown {
+        width: 50% !important; 
+    }
+
+    .get-center h2 {
+        font-family: 'Cookie', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 15px; 
+        text-align: center; 
+        color: #31524C;
+    }
+    
+    .get-center .dan {
+        font-size: 20px;
+        line-height: 0px;
+    }
+
+    .icon-first {
+        display: block !important;
+        width: 23% !important;
+        height: 17% !important;
+    }
+
+    .get-center p {
+        font-family: 'Crimson Text', serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center; 
+        color: #2A2A2D; 
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .opening p{
+        font-family: 'Crimson Text', serif;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .bismillah {
+        width: 50% !important;
+        /* height: auto !important; */
+    }
+
+    .row-one h2 {
+        font-family: 'Damion', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        /* line-height: 20px;  */
+        text-align: center; 
+        color: #4B4B4B; 
+        margin-bottom: 10px;
+    }
+    
+    .row-two h2 {
+        font-family: 'Damion', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px; 
+        text-align: center; 
+        color: #FFFFFF; 
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .time-view {
+        display: inline-flex;
+        margin-top: 20px;
+        width: 90%;
+    } 
+    
+    .akad span {
+        font-family: 'Crimson Text', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;  
+        color: #31524C; 
+    }
+    
+    .resepsi span {
+        font-family: 'Crimson Text', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;  
+        color: #31524C; 
+    }
+
+    .event p {
+        font-family: 'Crimson Text', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center; 
+        color: #FFFFFF;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .map-google {
+        border: 0;
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 90%; 
+        height: 210px;
+    }
+
+    .closing p {
+        font-family: 'Crimson Text', serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 30px;  
+        color: #000000; 
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .closing h2 {
+        font-family: 'Cookie', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 71px;
+        color: #31524C;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .closing h4 {
+        font-family: 'Cookie', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 20px;
+        color: #31524C;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .icon-jt {
+        width: 23% !important;
+        height: 17% !important;
+    } 
+     
+}
+
+@media screen and (max-width: 576px) { 
+    .icon-first {
+        display: block !important;
+        width: 35% !important;
+        height: 17% !important;
+    }
+
+    .icon-jt {
+        width: 34% !important;
+        height: 17% !important;
+    } 
+}
