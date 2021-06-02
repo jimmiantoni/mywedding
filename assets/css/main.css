@@ -132,6 +132,22 @@ body {
     width: 40px;
 }
 
+.create {
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    z-index: 5; 
+}
+
+.create h4 {
+    font-family: 'Crimson Text', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;  
+    margin: 0;
+    color: black;
+}
+
 .muted img{
     width: 70% !important;  
 }
@@ -683,11 +699,11 @@ body {
     } 
 
     .akad span {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .resepsi span {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
