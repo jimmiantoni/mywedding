@@ -19,14 +19,14 @@
     <meta property="og:url" content="https://jimandtsha.com/">
     <meta property="og:title" content="Undangan Pernikahan Jimmi & Tsha">
     <meta property="og:description" content="We invite you to celebrate our wedding">
-    <meta property="og:image" content="https://jimandtsha.com/assets/img/meta.jpg">
+    <meta property="og:image" content="https://jimandtsha.com/assets/img/meta.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://jimandtsha.com/">
     <meta property="twitter:title" content="Undangan Pernikahan Jimmi & Tsha">
     <meta property="twitter:description" content="We invite you to celebrate our wedding">
-    <meta property="twitter:image" content="https://jimandtsha.com/assets/img/meta.jpg">
+    <meta property="twitter:image" content="https://jimandtsha.com/assets/img/meta.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script> 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
@@ -45,6 +45,9 @@
                 <p>Dengan memohon Rahmat dan Ridho Allah SWT kami bermaksud menyelenggarakan <br>Resepsi Pernikahan putra-putri kami.</p>
                 <p class="scroll-down">Scroll down</p>
                 <img src="./assets/img/trigger.svg" alt="Icon" class="trigger"> 
+                <audio autoplay id="audio-wedd"> 
+                    <source src="./assets/audio/The-Cab-Intoxicated.mp3" type="audio/mpeg"> 
+                </audio>
             </div>
             <div class="swiper-slide opening">
                 <img src="./assets/img/bismillah.svg" alt="Icon" class="bismillah">
@@ -84,7 +87,7 @@
                         <div class="under-first"></div>
                         <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d732.4379214275789!2d100.38732427469952!3d-0.9691862735174901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwNTgnMDkuMSJTIDEwMMKwMjMnMTUuOCJF!5e0!3m2!1sen!2sid!4v1622182817477!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
                         <p>Perumahan Banuaran Indah Blok G 11 RT 003 / RW 010, Kelurahan Banuaran Nan XX, <br> Kecamatan Lubuk Begalung, Kota Padang</p>
-                        <a href="https://www.google.com/maps/dir//Padang,+Banuaran+Nan+XX,+Lubuk+Begalung,+Padang+City,+West+Sumatra+25139/@-0.9691661,100.38751,19.74z/data=!4m9!4m8!1m0!1m5!1m1!1s0x2fd4bbd6937c06dd:0xee57c81ab39c98e6!2m2!1d100.3878429!2d-0.9691882!3e2" target="_blank" >
+                        <a href="https://goo.gl/maps/CbhkH9NMq2W2Bfo87" target="_blank" >
                             <img src="./assets/img/openmap.svg" alt="map" class="openmaps">
                         </a>
                         <p class="klik">Klik icon di atas untuk menuju lokasi</p>
@@ -107,6 +110,11 @@
                 <a href="#" id="close">Penutup</a>
             </div>
         </div>
+        <div class="muted">
+            <a id="muted">
+                <img src="./assets/img/unmute.png" alt="mute">
+            </a>
+        </div>
     </div>
     <div class="bg-open">
         <h1>Wedding Invitation</h1> 
@@ -115,11 +123,11 @@
                 <div class="line-green"></div>
             </div>
             <div class="icon">
-                <img src="./assets/img/icon.svg" alt="Icon" class="iconJT">
-            </div>
-            
-        </div>
-        
+                <a id="open-invitation">
+                    <img src="./assets/img/icon.svg" alt="Icon" class="iconJT">
+                </a> 
+            </div> 
+        </div> 
     </div>
     <script>
         function doBounce(element, times, distance, speed) {
@@ -127,20 +135,20 @@
                 element.animate({marginTop: '-='+distance},speed)
                     .animate({marginTop: '+='+distance},speed);
             }        
-        }  
-            
-        $( document ).ready(function() {  
-                setTimeout(() => {
-                    $(".bg-open").slideUp();  
-                }, 4000)
-                doBounce($('.iconJT'), 6, '10px', 300);
-                
+        }   
+        $(document).ready(function() {   
+                var vid = document.getElementById("audio-wedd");
+                vid.volume = 0.15;
+                doBounce($('.iconJT'), 120, '10px', 300);
+                // setTimeout(() => {
+                    // $(".bg-open").slideUp();  
+                // }, 4000) 
         }); 
         var swiper = new Swiper(".mySwiper", {
-          direction: "vertical",
-          slidesPerView: 1,
-          spaceBetween: 30,
-          mousewheel: true, 
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true, 
         });
         $( "#home" ).on( "click", function() {
             swiper.slideTo(0, 300)
@@ -153,6 +161,21 @@
         });
         $( "#close" ).on( "click", function() {
             swiper.slideTo(3, 300)
+        });
+        $( "#open-invitation" ).on( "click", function() {
+            $(".bg-open").slideUp();
+            var x = document.getElementById("audio-wedd");
+            x.play();
+        });
+        $( "#muted" ).on( "click", function() { 
+            var x = document.getElementById("audio-wedd"); 
+            if (x.muted) {
+                x.muted = false;
+                $("#muted img").attr("src", "./assets/img/unmute.png")
+            } else {
+                x.muted = true;
+                $("#muted img").attr("src", "./assets/img/mute.png")
+            }
         }); 
     </script>
 </body> 
